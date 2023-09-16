@@ -1,7 +1,9 @@
-# roost-dataset: remote sensing object detection dataset
-We release multi-channel weather radar sensing datasets with roost annotations, 
-for the purpose of **ecological analyses** and 
-developing **visual object detection and tracking models** to recognize biological phenomena in radar data.
+# roost-dataset: a remote sensing object detection dataset
+Many flying animal species congregate in large numbers and their movements are visible in weather radar data. 
+This repository releases multi-channel weather radar datasets with annotations for 
+swallow roosts across several weather radar stations and years, 
+for the purpose of ecological analyses and 
+developing visual object detection and tracking models to recognize biological phenomena in radar data.
 
 ### Overview
 Weather radar data hold information about biological phenomena in the atmosphere. 
@@ -13,7 +15,7 @@ for machine learning;
 3. npz files that save **arrays** rendered from radar products corresponding to the list of scans.
 
 Shape and direction:
-- Each npz file is a dictionary with array and dualpol_array as two keys.
+- Each npz file stores a dictionary for a radar scan, with _array_ and _dualpol_array_ as two keys.
   - array: a 3x5x600x600 array where the dimensions are 
     radar fields {reflectivity, velocity, spectrum_width}, 
     elevation angles {0.5, 1.5, 2.5, 3.5, 4.5} degrees,
@@ -29,9 +31,13 @@ we need to set `origin='lower'` to get the **image direction** where the top of 
 ### Release
 The json files are available under **datasets**. 
 - **roosts_v0.0.1_official** defines a toy mini-dataset to demonstrate the format of roosts_v0.1.0.
-- **roosts_v0.1.0_official** defines a standardized dataset constructed by [1]. Data are originally labeled by [2].
+- **roosts_v0.1.0_official** defines a standardized dataset constructed by [1]. Data are originally labeled by [2]. 
+The rendered arrays can be downloaded from https://zenodo.org/record/8344583. Radar scan statistics are as follows:
 
-The rendered arrays can be downloaded from **TODO**.
+| Station | KAMX | KMOB | KDOX | KHGX | KTBW | KOKX | KJAX | KRTX | KLCH | KTLH | KMLB | KLIX |
+| Training | 1897 | 32 | 810 | 247 | 16325 | 2994 | 137 | 316 | 441 | 58 | 19849 | 10160 |
+| Validation | 335 | 12 | 261 | 63 | 3446 | 509 | 20 | 13 | 122 | 12 | 4271 | 2535 |
+| Testing | 860 | 43 | 618 | 105 | 7167 | 1404 | 63 | 82 | 112 | 0 | 9071 | 4062 |
 
 To reproduce these json files and render arrays yourself, please refer to 
 [wsrdata](https://github.com/darkecology/wsrdata/tree/master).
