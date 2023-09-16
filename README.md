@@ -35,9 +35,11 @@ The json files are available under **datasets**.
 The rendered arrays can be downloaded from https://zenodo.org/record/8344583. Radar scan statistics are as follows:
 
 | Station | KAMX | KMOB | KDOX | KHGX | KTBW | KOKX | KJAX | KRTX | KLCH | KTLH | KMLB | KLIX |
+| --- |------| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Training | 1897 | 32 | 810 | 247 | 16325 | 2994 | 137 | 316 | 441 | 58 | 19849 | 10160 |
-| Validation | 335 | 12 | 261 | 63 | 3446 | 509 | 20 | 13 | 122 | 12 | 4271 | 2535 |
-| Testing | 860 | 43 | 618 | 105 | 7167 | 1404 | 63 | 82 | 112 | 0 | 9071 | 4062 |
+| Validation | 335  | 12 | 261 | 63 | 3446 | 509 | 20 | 13 | 122 | 12 | 4271 | 2535 |
+| Testing | 860  | 43 | 618 | 105 | 7167 | 1404 | 63 | 82 | 112 | 0 | 9071 | 4062 |
+| Total | 3092 | 87 | 1689 | 415 | 26938 | 4907 | 220 | 411 | 675 | 70 | 33191 | 16757 |
 
 To reproduce these json files and render arrays yourself, please refer to 
 [wsrdata](https://github.com/darkecology/wsrdata/tree/master).
