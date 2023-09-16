@@ -4,7 +4,8 @@ This repository releases multi-channel weather radar datasets with annotations f
 swallow roosts across several weather radar stations and years, 
 for the purpose of ecological analyses and 
 developing visual object detection and tracking models to recognize biological phenomena in radar data.
-![track](https://github.com/darkecology/roost-dataset/assets/38199480/048c04c7-f907-41be-b2d0-36af35dbc5f2)
+
+![track](https://github.com/darkecology/roost-dataset/assets/38199480/db97c6bb-a104-41da-a751-ba07ec7b1bfd)
 
 ### Overview
 Weather radar data hold information about biological phenomena in the atmosphere. 
